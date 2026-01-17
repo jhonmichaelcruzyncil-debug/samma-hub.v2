@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
@@ -99,13 +94,14 @@
     <div class="dropdown">
         <a href="#catalogo" class="dropdown-btn">Catálogo</a>
         <div class="dropdown-menu">
-            <a href="#">Polo Básicos</a>
-            <a href="#">Tops</a>
-            <a href="#">Abrigos y Casacas</a>
-            <a href="#">Buzos</a>
-            <a href="#">Denin</a>
-            <a href="#">Faldas y Shorts</a>
-            <a href="#">Conjunto Samma</a>
+            <a href="#">POLOS BÁSICOS</a>
+            <a href="#">TOPS</a>
+            <a href="#">ABRIGOS Y CASACAS</a>
+            <a href="#">BUZOS</a>
+            <a href="#">DENIN</a>
+            <a href="#">FALDAS Y SHORTS</a>
+            <a href="#">CONJUNTO SAMMA</a>
+           <!-- <a href="#">VESTIDO</a>-->
             <a href="#" class="ver-todo">Ver todo</a>
         </div>
     </div>
@@ -116,7 +112,7 @@
 
     <a href="#cart" class="cart-icon">🛒</a>
 
-    <a href="#" id="loginBtn" class="user-icon">👤</a>
+    <button id="loginBtn" class="user-icon">👤</button>
 
 
 
@@ -126,7 +122,7 @@
 </header>
 
     <!-- Hero / Banner -->
-    <section id="home" class="hero" id="main-content">
+    <section id="home" class="hero">
         <div class="hero-background">
             <div class="hero-overlay"></div>
             <div class="hero-shapes">
@@ -183,7 +179,7 @@
 
                 <div class="hero-visual">
                     <div class="hero-image-container">
-                        <img src="assets/products/dress1.jpg" alt="Colección Samma.hub" class="hero-image">
+                <img src="assets/new in/Vestido Elegante.jpg" alt="Colección Samma.hub" class="hero-image" onerror="handleImageError(this)">
                         <div class="hero-image-overlay">
                             <div class="image-badge">
                                 <span class="badge-text">Nuevo</span>
@@ -219,11 +215,11 @@
                 <div class="social-links">
                     <a href="https://www.instagram.com/samma.hub/" target="_blank" class="social-link">
                         <span class="social-icon">📷</span>
-                        <span>@samma.hub</span>
+                        <span class="social-text">Instagram</span>
                     </a>
                     <a href="https://www.tiktok.com/@samma.hub" target="_blank" class="social-link">
                         <span class="social-icon">🎵</span>
-                        <span>@samma.hub</span>
+                        <span class="social-text">TikTok</span>
                     </a>
                 </div>
             </div>
@@ -268,13 +264,14 @@
         </div>
     </div>
 
+
     <div class="products-grid new-in-grid">
 
         <div class="product-card featured" data-category="tops">
             <div class="product-image-container">
-                <img src="assets/products/Conjunto Comfy Gris.jpg" alt="Conjunto Comfy Gris" class="product-image">
+                <img src="assets/new in/Conjunto Comfy.jpg" alt="Conjunto Comfy" class="product-image">
                 <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Conjunto Comfy Gris', 'Comodidad y estilo en un solo look. Ideal para el día a día, con tela suave y ajuste relajado que te acompaña en casa o en salidas casuales. Versátil, moderno y fácil de combinar.', '120.00', 'assets/products/Conjunto Comfy Gris.jpg')">
+                    <button class="quick-view-btn" onclick="openQuickView('Conjunto Comfy', 'Diseño exclusivo con corte asimétrico y tela premium. Perfecto para ocasiones especiales con un toque moderno.', '89.90', 'assets/new in/Conjunto Comfy.jpg')">
                         👁️ Vista rápida
                     </button>
                     <button class="wishlist-btn" onclick="toggleWishlist(this)">
@@ -285,8 +282,8 @@
                 <div class="product-badge featured">Destacado</div>
             </div>
             <div class="product-info">
-                <div class="product-category">Conjunto Samma</div>
-                <h3 class="product-name">Conjunto Comfy Gris</h3>
+                <div class="product-category">Tops Premium</div>
+                <h3 class="product-name">Conjunto Comfy</h3>
                 <div class="product-rating">
                     <span class="stars">★★★★★</span>
                     <span class="rating-count">(47)</span>
@@ -301,47 +298,9 @@
                     <span class="color-option" style="background: #059669;"></span>
                 </div>
                 <button class="btn add-to-cart"
-                        data-name="Conjunto Comfy Gris"
+                        data-name="Conjunto Comfy"
                         data-price="120.00"
-                        data-img="assets/products/Conjunto Comfy Gris.jpg">
-                    <span class="btn-icon">🛒</span>
-                    Agregar al carrito
-                </button>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="dresses">
-            <div class="product-image-container">
-                <img src="assets/products/Conjunto Comfy negro.jpg" alt="Conjunto Comfy negro" class="product-image">
-                <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Conjunto Comfy negro', 'Comodidad y estilo en un solo look. Ideal para el día a día, con tela suave y ajuste relajado que te acompaña en casa o en salidas casuales. Versátil, moderno y fácil de combinar.', '120.00', 'assets/products/Conjunto Comfy negro.jpg')">
-                        👁️ Vista rápida
-                    </button>
-                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
-                        ❤️
-                    </button>
-                </div>
-                <div class="product-badge new">Nuevo</div>
-            </div>
-            <div class="product-info">
-                <div class="product-category">Conjunto Samma</div>
-                <h3 class="product-name">Conjunto Comfy negro</h3>
-                <div class="product-rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="rating-count">(23)</span>
-                </div>
-                <div class="product-price">
-                    <span class="current-price">S/ 120.00</span>
-                </div>
-                <div class="product-colors">
-                    <span class="color-option" style="background: #000;"></span>
-                    <span class="color-option" style="background: #f59e0b;"></span>
-                    <span class="color-option" style="background: #ec4899;"></span>
-                </div>
-                <button class="btn add-to-cart"
-                        data-name="Conjunto Comfy negro"
-                        data-price="120.00"
-                        data-img="assets/products/Conjunto Comfy negro.jpg">
+                        data-img="assets/new in/Conjunto Comfy.jpg">
                     <span class="btn-icon">🛒</span>
                     Agregar al carrito
                 </button>
@@ -350,9 +309,9 @@
 
         <div class="product-card" data-category="bottoms">
             <div class="product-image-container">
-                <img src="assets/products/Jacket Berlín -Chocolate.jpg" alt="Jacket Berlín -Chocolate" class="product-image">
+                <img src="assets/new in/Jean casual.jpg" alt="Jean casual" class="product-image" onerror="handleImageError(this)">
                 <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Jacket Berlín -Chocolate', 'Elegante y moderna, perfecta para elevar cualquier outfit. Su tono chocolate aporta un estilo sofisticado, ideal para climas frescos y looks urbanos. Cómoda, versátil y fácil de combinar.', '99.90', 'assets/products/Jacket Berlín -Chocolate.jpg')">
+                    <button class="quick-view-btn" onclick="openQuickView('Jean casual', 'Jean casual cómodo y moderno. Perfecto para un look urbano y versátil.', '129.90', 'assets/new in/Jean casual.jpg')">
                         👁️ Vista rápida
                     </button>
                     <button class="wishlist-btn" onclick="toggleWishlist(this)">
@@ -362,8 +321,46 @@
                 <div class="product-badge new">Nuevo</div>
             </div>
             <div class="product-info">
-                <div class="product-category">Casacas</div>
-                <h3 class="product-name">Jacket Berlín -Chocolate</h3>
+                <div class="product-category">Bottoms</div>
+                <h3 class="product-name">Jean casual</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(23)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 129.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                    <span class="color-option" style="background: #6b7280;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Jean casual"
+                        data-price="129.90"
+                        data-img="assets/new in/Jean casual.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="bottoms">
+            <div class="product-image-container">
+                <img src="assets/new in/Short.jpg" alt="Short" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Short', 'Short con diseño moderno y múltiples bolsillos. Cómodo y con estilo urbano.', '99.90', 'assets/new in/Short.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge new">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">Bottoms</div>
+                <h3 class="product-name">Short</h3>
                 <div class="product-rating">
                     <span class="stars">★★★★☆</span>
                     <span class="rating-count">(31)</span>
@@ -377,9 +374,9 @@
                     <span class="color-option" style="background: #6b7280;"></span>
                 </div>
                 <button class="btn add-to-cart"
-                        data-name="Jacket Berlín -Chocolate"
+                        data-name="Short"
                         data-price="99.90"
-                        data-img="assets/products/Jacket Berlín -Chocolate.jpg">
+                        data-img="assets/new in/Short.jpg">
                     <span class="btn-icon">🛒</span>
                     Agregar al carrito
                 </button>
@@ -388,9 +385,9 @@
 
         <div class="product-card" data-category="tops">
             <div class="product-image-container">
-                <img src="assets/products/pants1.jpg" alt="Blusa Oversize Trendy" class="product-image">
+                <img src="assets/new in/Top Chicago.jpg" alt="Top Chicago" class="product-image">
                 <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Blusa Oversize Trendy', 'Blusa oversize con diseño trendy y cómodo. Perfecta para un look casual y moderno.', '79.90', 'assets/products/pants1.jpg')">
+                    <button class="quick-view-btn" onclick="openQuickView('Top Chicago', 'Top Chicago con diseño trendy y cómodo. Perfecta para un look casual y moderno.', '79.90', 'assets/new in/Top Chicago.jpg')">
                         👁️ Vista rápida
                     </button>
                     <button class="wishlist-btn" onclick="toggleWishlist(this)">
@@ -401,7 +398,7 @@
             </div>
             <div class="product-info">
                 <div class="product-category">Tops</div>
-                <h3 class="product-name">Blusa Oversize Trendy</h3>
+                <h3 class="product-name">Top Chicago</h3>
                 <div class="product-rating">
                     <span class="stars">★★★★★</span>
                     <span class="rating-count">(19)</span>
@@ -416,9 +413,9 @@
                     <span class="color-option" style="background: #10b981;"></span>
                 </div>
                 <button class="btn add-to-cart"
-                        data-name="Blusa Oversize Trendy"
+                        data-name="Top Chicago"
                         data-price="79.90"
-                        data-img="assets/products/pants1.jpg">
+                        data-img="assets/new in/Top Chicago.jpg">
                     <span class="btn-icon">🛒</span>
                     Agregar al carrito
                 </button>
@@ -427,9 +424,9 @@
 
         <div class="product-card" data-category="outerwear">
             <div class="product-image-container">
-                <img src="assets/products/Top asimétrico.png" alt="Chaqueta Denim Vintage" class="product-image">
+                <img src="assets/new in/Top Playero.jpg" alt="Top Playero" class="product-image">
                 <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Chaqueta Denim Vintage', 'Chaqueta denim con estilo vintage y detalles únicos. Una pieza esencial para tu guardarropa.', '149.90', 'assets/products/Top asimétrico.png')">
+                    <button class="quick-view-btn" onclick="openQuickView('Top Playero', 'Top Playero con estilo vintage y detalles únicos. Una pieza esencial para tu guardarropa.', '149.90', 'assets/new in/Top Playero.jpg')">
                         👁️ Vista rápida
                     </button>
                     <button class="wishlist-btn" onclick="toggleWishlist(this)">
@@ -441,7 +438,7 @@
             </div>
             <div class="product-info">
                 <div class="product-category">Abrigos</div>
-                <h3 class="product-name">Chaqueta Denim Vintage</h3>
+                <h3 class="product-name">Top Playero</h3>
                 <div class="product-rating">
                     <span class="stars">★★★★★</span>
                     <span class="rating-count">(38)</span>
@@ -455,9 +452,9 @@
                     <span class="color-option" style="background: #6b7280;"></span>
                 </div>
                 <button class="btn add-to-cart"
-                        data-name="Chaqueta Denim Vintage"
+                        data-name="Top Playero"
                         data-price="149.90"
-                        data-img="assets/products/Top asimétrico.png">
+                        data-img="assets/new in/Top Playero.jpg">
                     <span class="btn-icon">🛒</span>
                     Agregar al carrito
                 </button>
@@ -466,9 +463,9 @@
 
         <div class="product-card" data-category="bottoms">
             <div class="product-image-container">
-                <img src="assets/products/1.jpg" alt="Shorts de Jean Premium" class="product-image">
+                <img src="assets/new in/Vestido Elegante.jpg" alt="Vestido Elegante" class="product-image">
                 <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Shorts de Jean Premium', 'Shorts de jean premium con corte perfecto. Cómodos y con estilo para el verano.', '69.90', 'assets/products/1.jpg')">
+                    <button class="quick-view-btn" onclick="openQuickView('Vestido Elegante', 'Vestido Elegante con corte perfecto. Cómodos y con estilo para el verano.', '69.90', 'assets/new in/Vestido Elegante.jpg')">
                         👁️ Vista rápida
                     </button>
                     <button class="wishlist-btn" onclick="toggleWishlist(this)">
@@ -479,7 +476,7 @@
             </div>
             <div class="product-info">
                 <div class="product-category">Bottoms</div>
-                <h3 class="product-name">Shorts de Jean Premium</h3>
+                <h3 class="product-name">Vestido Elegante</h3>
                 <div class="product-rating">
                     <span class="stars">★★★★☆</span>
                     <span class="rating-count">(27)</span>
@@ -493,9 +490,9 @@
                     <span class="color-option" style="background: #6b7280;"></span>
                 </div>
                 <button class="btn add-to-cart"
-                        data-name="Shorts de Jean Premium"
+                        data-name="Vestido Elegante"
                         data-price="69.90"
-                        data-img="assets/products/1.jpg">
+                        data-img="assets/new in/Vestido Elegante.jpg">
                     <span class="btn-icon">🛒</span>
                     Agregar al carrito
                 </button>
@@ -525,33 +522,166 @@
 <!-- CATÁLOGO -->
 <section id="catalogo" class="shop reveal">
 
-    <div class="catalog-header">
-        <h2>Nuestro Catálogo</h2>
-        <p>Descubre prendas únicas con estilo y calidad excepcional 💖</p>
+    <!-- CATALOG HEADER SUPERIOR -->
+    <div class="catalog-header-superior">
+        <div class="catalog-header-bg">
+            <div class="catalog-header-content">
+                <div class="catalog-header-text">
+                    <div class="catalog-badge">
+                        <span class="badge-icon">💎</span>
+                        <span>Catálogo Exclusivo 2026</span>
+                    </div>
+                    <h2 class="catalog-title">
+                        <span class="title-main">Nuestro Catálogo</span>
+                        <span class="title-accent">Premium</span>
+                    </h2>
+                    <p class="catalog-subtitle">
+                        Descubre prendas únicas con estilo y calidad excepcional.
+                        <span class="highlight">Cada pieza cuenta una historia 💖</span>
+                    </p>
+                    <div class="catalog-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Productos únicos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Calidad garantizada</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Atención personalizada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-header-visual">
+                    <div class="catalog-showcase">
+                        <div class="showcase-item featured">
+                            <img src="assets/products/Top Aliah.jpg" alt="Producto destacado" class="showcase-image">
+                            <div class="showcase-overlay">
+                                <span class="showcase-label">Más vendido</span>
+                            </div>
+                        </div>
+                        <div class="showcase-item">
+                            <img src="assets/products/Top Berry.jpg" alt="Producto" class="showcase-image">
+                        </div>
+                        <div class="showcase-item">
+                            <img src="assets/products/Top Chicago.jpg" alt="Producto" class="showcase-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- FILTROS -->
-    <div class="catalog-filters">
-        <div class="filter-tabs">
-            <button class="filter-tab active" data-filter="all">Todo</button>
-            <button class="filter-tab" data-filter="tops">Tops</button>
-            <button class="filter-tab" data-filter="bottoms">Bottoms</button>
-            <button class="filter-tab" data-filter="dresses">Vestidos</button>
-            <button class="filter-tab" data-filter="outerwear">Abrigos</button>
-        </div>
-        <div class="filter-search">
-            <input type="text" id="productSearch" placeholder="Buscar productos..." aria-label="Buscar productos">
-            <span class="search-icon">🔍</span>
+    <!-- FILTROS Y CONTROLES SUPERIORES -->
+    <div class="catalog-controls-superior">
+        <div class="catalog-filters-superior">
+            <div class="filter-tabs-superior">
+                <button class="filter-tab-superior active" data-filter="all">
+                    <span class="tab-icon">🌟</span>
+                    <span class="tab-text">Todo</span>
+                    <span class="tab-count">(50)</span>
+                </button>
+                <button class="filter-tab-superior" data-filter="tops">
+                    <span class="tab-icon">👕</span>
+                    <span class="tab-text">Tops</span>
+                    <span class="tab-count">(12)</span>
+                </button>
+                <button class="filter-tab-superior" data-filter="basic polo shirts">
+                    <span class="tab-icon">👔</span>
+                    <span class="tab-text">Polos básicos</span>
+                    <span class="tab-count">(8)</span>
+                </button>
+                <button class="filter-tab-superior" data-filter="Divers">
+                    <span class="tab-icon">🧥</span>
+                    <span class="tab-text">Buzos</span>
+                    <span class="tab-count">(6)</span>
+                </button>
+                <button class="filter-tab-superior" data-filter="Coats and jackets">
+                    <span class="tab-icon">🧥</span>
+                    <span class="tab-text">Abrigos y casacas</span>
+                    <span class="tab-count">(5)</span>
+                </button>
+                <button class="filter-tab-superior" data-filter="Denim">
+                    <span class="tab-icon">👖</span>
+                    <span class="tab-text">Denim</span>
+                    <span class="tab-count">(7)</span>
+                </button>
+                <button class="filter-tab-superior" data-filter="Skirts and shorts">
+                    <span class="tab-icon">👗</span>
+                    <span class="tab-text">Faldas y shorts</span>
+                    <span class="tab-count">(6)</span>
+                </button>
+                <button class="filter-tab-superior" data-filter="Samma Sets">
+                    <span class="tab-icon">💝</span>
+                    <span class="tab-text">Conjuntos Samma</span>
+                    <span class="tab-count">(6)</span>
+                </button>
+            </div>
+
+            <div class="filter-controls">
+                <div class="search-section-superior">
+                    <div class="search-input-wrapper">
+                        <span class="search-icon-superior">🔍</span>
+                        <input type="text" id="productSearch" placeholder="Buscar productos exclusivos..." aria-label="Buscar productos">
+                        <button class="search-clear" id="searchClear" style="display: none;">✕</button>
+                    </div>
+                </div>
+
+                <div class="sort-section">
+                    <div class="sort-dropdown">
+                        <button class="sort-btn" id="sortBtn">
+                            <span class="sort-icon">📊</span>
+                            <span class="sort-text">Ordenar por</span>
+                            <span class="sort-arrow">▼</span>
+                        </button>
+                        <div class="sort-options" id="sortOptions">
+                            <button class="sort-option active" data-sort="featured">
+                                <span class="option-icon">⭐</span>
+                                Destacados
+                            </button>
+                            <button class="sort-option" data-sort="price-low">
+                                <span class="option-icon">💰</span>
+                                Precio: Menor a Mayor
+                            </button>
+                            <button class="sort-option" data-sort="price-high">
+                                <span class="option-icon">💎</span>
+                                Precio: Mayor a Menor
+                            </button>
+                            <button class="sort-option" data-sort="newest">
+                                <span class="option-icon">🆕</span>
+                                Más recientes
+                            </button>
+                            <button class="sort-option" data-sort="rating">
+                                <span class="option-icon">⭐</span>
+                                Mejor calificados
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-controls">
+                    <button class="view-btn active" data-view="grid" title="Vista en cuadrícula">
+                        <span class="view-icon">⊞</span>
+                    </button>
+                    <button class="view-btn" data-view="list" title="Vista en lista">
+                        <span class="view-icon">☰</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="products-grid">
 
-        <div class="product-card" data-category="tops">
+        <!-- Tops -->
+
+        <div class="product-card" data-category="TOPS">
             <div class="product-image-container">
-                <img src="assets/products/dress1.jpg" alt="Top Básico" class="product-image">
+                <img src="assets/products/Top Aliah.jpg" alt="Top Aliah" class="product-image">
                 <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Top Básico', 'Un top básico versátil perfecto para cualquier ocasión. Confeccionado con materiales de alta calidad.', '59.90', 'assets/products/dress1.jpg')">
+                    <button class="quick-view-btn" onclick="openQuickView('Top Aliah', 'Top Aliah elegante y cómodo para climas frescos.', '149.90', 'assets/products/Top Aliah.jpg')">
                         👁️ Vista rápida
                     </button>
                     <button class="wishlist-btn" onclick="toggleWishlist(this)">
@@ -561,220 +691,737 @@
                 <div class="product-badge">Nuevo</div>
             </div>
             <div class="product-info">
-                <div class="product-category">Tops</div>
-                <h3 class="product-name">Top Básico</h3>
+                <div class="product-category">TOPS</div>
+                <h3 class="product-name">Top Aliah</h3>
                 <div class="product-rating">
                     <span class="stars">★★★★★</span>
-                    <span class="rating-count">(24)</span>
+                    <span class="rating-count">(25)</span>
                 </div>
                 <div class="product-price">
-                    <span class="current-price">S/ 59.90</span>
-                </div>
-                <div class="product-colors">
-                    <span class="color-option" style="background: #000;"></span>
-                    <span class="color-option" style="background: #fff; border: 1px solid #ddd;"></span>
-                    <span class="color-option" style="background: #ff6b9d;"></span>
-                </div>
-                <button class="btn add-to-cart"
-                        data-name="Top Básico"
-                        data-price="59.90"
-                        data-img="assets/products/dress1.jpg">
-                    <span class="btn-icon">🛒</span>
-                    Agregar al carrito
-                </button>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="dresses">
-            <div class="product-image-container">
-                <img src="assets/products/top1.jpg" alt="Vestido Moderno" class="product-image">
-                <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Vestido Moderno', 'Vestido elegante con diseño moderno y cómodo. Perfecto para ocasiones especiales.', '119.90', 'assets/products/top1.jpg')">
-                        👁️ Vista rápida
-                    </button>
-                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
-                        ❤️
-                    </button>
-                </div>
-                <div class="product-badge sale">Oferta</div>
-            </div>
-            <div class="product-info">
-                <div class="product-category">Vestidos</div>
-                <h3 class="product-name">Vestido Moderno</h3>
-                <div class="product-rating">
-                    <span class="stars">★★★★☆</span>
-                    <span class="rating-count">(18)</span>
-                </div>
-                <div class="product-price">
-                    <span class="original-price">S/ 149.90</span>
-                    <span class="current-price">S/ 119.90</span>
-                    <span class="discount">-20%</span>
-                </div>
-                <div class="product-colors">
-                    <span class="color-option" style="background: #000;"></span>
-                    <span class="color-option" style="background: #8b5cf6;"></span>
-                    <span class="color-option" style="background: #ef4444;"></span>
-                </div>
-                <button class="btn add-to-cart"
-                        data-name="Vestido Moderno"
-                        data-price="119.90"
-                        data-img="assets/products/top1.jpg">
-                    <span class="btn-icon">🛒</span>
-                    Agregar al carrito
-                </button>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="bottoms">
-            <div class="product-image-container">
-                <img src="assets/products/skirt1.jpg" alt="Pantalón Elegante" class="product-image">
-                <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Pantalón Elegante', 'Pantalón de alta calidad con corte elegante. Cómodo y versátil para el día a día.', '89.90', 'assets/products/skirt1.jpg')">
-                        👁️ Vista rápida
-                    </button>
-                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
-                        ❤️
-                    </button>
-                </div>
-            </div>
-            <div class="product-info">
-                <div class="product-category">Bottoms</div>
-                <h3 class="product-name">Pantalón Elegante</h3>
-                <div class="product-rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="rating-count">(32)</span>
-                </div>
-                <div class="product-price">
-                    <span class="current-price">S/ 89.90</span>
+                    <span class="current-price">S/ 149.90</span>
                 </div>
                 <div class="product-colors">
                     <span class="color-option" style="background: #000;"></span>
                     <span class="color-option" style="background: #374151;"></span>
-                    <span class="color-option" style="background: #6b7280;"></span>
                 </div>
                 <button class="btn add-to-cart"
-                        data-name="Pantalón Elegante"
-                        data-price="89.90"
-                        data-img="assets/products/skirt1.jpg">
+                        data-name="Top Aliah"
+                        data-price="149.90"
+                        data-img="assets/products/Top Aliah.jpg">
                     <span class="btn-icon">🛒</span>
                     Agregar al carrito
                 </button>
             </div>
         </div>
 
-        <div class="product-card" data-category="tops">
+        <div class="product-card" data-category="TOPS">
             <div class="product-image-container">
-                <img src="assets/products/pants1.jpg" alt="Blusa Asimétrica" class="product-image">
+                <img src="assets/products/Top Berry.jpg" alt="Top Berry" class="product-image">
                 <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Blusa Asimétrica', 'Blusa con diseño asimétrico único. Perfecta para un look moderno y sofisticado.', '79.90', 'assets/products/pants1.jpg')">
+                    <button class="quick-view-btn" onclick="openQuickView('Top Berry', 'Top Berry elegante y cómodo para climas frescos.', '149.90', 'assets/products/Top Berry.jpg')">
                         👁️ Vista rápida
                     </button>
                     <button class="wishlist-btn" onclick="toggleWishlist(this)">
                         ❤️
                     </button>
                 </div>
+                <div class="product-badge">Nuevo</div>
             </div>
             <div class="product-info">
-                <div class="product-category">Tops</div>
-                <h3 class="product-name">Blusa Asimétrica</h3>
-                <div class="product-rating">
-                    <span class="stars">★★★★☆</span>
-                    <span class="rating-count">(15)</span>
-                </div>
-                <div class="product-price">
-                    <span class="current-price">S/ 79.90</span>
-                </div>
-                <div class="product-colors">
-                    <span class="color-option" style="background: #fff; border: 1px solid #ddd;"></span>
-                    <span class="color-option" style="background: #000;"></span>
-                    <span class="color-option" style="background: #f59e0b;"></span>
-                </div>
-                <button class="btn add-to-cart"
-                        data-name="Blusa Asimétrica"
-                        data-price="79.90"
-                        data-img="assets/products/pants1.jpg">
-                    <span class="btn-icon">🛒</span>
-                    Agregar al carrito
-                </button>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="outerwear">
-            <div class="product-image-container">
-                <img src="assets/products/Top asimétrico.png" alt="Chaqueta Moderna" class="product-image">
-                <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Chaqueta Moderna', 'Chaqueta elegante con diseño moderno. Ideal para climas frescos.', '159.90', 'assets/products/Top asimétrico.png')">
-                        👁️ Vista rápida
-                    </button>
-                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
-                        ❤️
-                    </button>
-                </div>
-                <div class="product-badge">Popular</div>
-            </div>
-            <div class="product-info">
-                <div class="product-category">Abrigos</div>
-                <h3 class="product-name">Chaqueta Moderna</h3>
+                <div class="product-category">TOPS</div>
+                <h3 class="product-name">Top Berry</h3>
                 <div class="product-rating">
                     <span class="stars">★★★★★</span>
-                    <span class="rating-count">(28)</span>
+                    <span class="rating-count">(10)</span>
                 </div>
                 <div class="product-price">
-                    <span class="current-price">S/ 159.90</span>
+                    <span class="current-price">S/ 149.90</span>
                 </div>
                 <div class="product-colors">
                     <span class="color-option" style="background: #000;"></span>
                     <span class="color-option" style="background: #374151;"></span>
-                    <span class="color-option" style="background: #6b7280;"></span>
                 </div>
                 <button class="btn add-to-cart"
-                        data-name="Chaqueta Moderna"
-                        data-price="159.90"
-                        data-img="assets/products/Top asimétrico.png">
+                        data-name="Top Berry"
+                        data-price="149.90"
+                        data-img="assets/products/Top Berry.jpg">
                     <span class="btn-icon">🛒</span>
                     Agregar al carrito
                 </button>
             </div>
         </div>
 
-        <div class="product-card" data-category="bottoms">
+        <div class="product-card" data-category="TOPS">
             <div class="product-image-container">
-                <img src="assets/products/1.jpg" alt="Falda Plisada" class="product-image">
+                <img src="assets/products/Top Chicago.jpg" alt="Top Chicago" class="product-image">
                 <div class="product-overlay">
-                    <button class="quick-view-btn" onclick="openQuickView('Falda Plisada', 'Falda plisada elegante y cómoda. Perfecta para ocasiones formales o casuales.', '69.90', 'assets/products/1.jpg')">
+                    <button class="quick-view-btn" onclick="openQuickView('Top Chicago', 'Top Chicago elegante y cómodo para climas frescos.', '149.90', 'assets/products/Top Chicago.jpg')">
                         👁️ Vista rápida
                     </button>
                     <button class="wishlist-btn" onclick="toggleWishlist(this)">
                         ❤️
                     </button>
                 </div>
+                <div class="product-badge">Nuevo</div>
             </div>
             <div class="product-info">
-                <div class="product-category">Bottoms</div>
-                <h3 class="product-name">Falda Plisada</h3>
+                <div class="product-category">TOPS</div>
+                <h3 class="product-name">Top Chicago</h3>
                 <div class="product-rating">
-                    <span class="stars">★★★★☆</span>
-                    <span class="rating-count">(21)</span>
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
                 </div>
                 <div class="product-price">
-                    <span class="current-price">S/ 69.90</span>
+                    <span class="current-price">S/ 149.90</span>
                 </div>
                 <div class="product-colors">
                     <span class="color-option" style="background: #000;"></span>
-                    <span class="color-option" style="background: #fff; border: 1px solid #ddd;"></span>
-                    <span class="color-option" style="background: #dc2626;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
                 </div>
                 <button class="btn add-to-cart"
-                        data-name="Falda Plisada"
-                        data-price="69.90"
-                        data-img="assets/products/1.jpg">
+                        data-name="Top Chicago"
+                        data-price="149.90"
+                        data-img="assets/products/Top Chicago.jpg">
                     <span class="btn-icon">🛒</span>
                     Agregar al carrito
                 </button>
             </div>
         </div>
 
-    </div>
+        <div class="product-card" data-category="TOPS">
+            <div class="product-image-container">
+                <img src="assets/products/Top Greyl.jpg" alt="Top Grey" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Top Grey', 'Top Grey elegante y cómodo para climas frescos.', '149.90', 'assets/products/Top Greyl.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">TOPS</div>
+                <h3 class="product-name">Top Grey</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Top Grey"
+                        data-price="149.90"
+                        data-img="assets/products/Top Greyl.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="TOPS">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="TOPS">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="TOPS">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="TOPS">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="TOPS">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+     <!-- Conjuntos Samma -->
+
+        <div class="product-card" data-category="Conjuntos Samma">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Conjuntos Samma">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+     <!-- Faldas y shorts -->
+
+        <div class="product-card" data-category="Faldas y shorts">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Faldas y shorts">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+     <!-- Abrigos y casacas -->
+
+        <div class="product-card" data-category="Abrigos y casacas">
+            <div class="product-image-container">
+                <img src="assets/products/Top Vanila.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Top Vanila.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS Y CASACAS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Top Vanila.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Abrigos y casacas">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Abrigos y casacas">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Abrigos y casacas">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Abrigos y casacas">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Abrigos y casacas">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Abrigos y casacas">
+            <div class="product-image-container">
+                <img src="assets/products/Chompa tejido Kata.jpg" alt="Abrigo 1" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Abrigo 1', 'Chompa tejido Kata elegante y cómodo para climas frescos.', '149.90', 'assets/products/Chompa tejido Kata.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ABRIGOS</div>
+                <h3 class="product-name">Abrigo 1</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(10)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Abrigo 1"
+                        data-price="149.90"
+                        data-img="assets/products/Chompa tejido Kata.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
 
     <!-- LOAD MORE BUTTON -->
     <div class="load-more-container">
@@ -847,40 +1494,110 @@
 
 <!-- FOOTER -->
 <footer class="footer-info">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path>
+        </svg>
+    </div>
 
     <div class="footer-container">
-
         <div class="footer-column">
-            <h4>NUESTRAS TIENDAS</h4>
-            <p>Galería - Damero tienda 105</p>
-            <p>Galería - La Koketa tienda B 103</p>
+            <div class="footer-column-header">
+                <span class="footer-icon">🏪</span>
+                <h4>NUESTRAS TIENDAS</h4>
+            </div>
+            <div class="store-info">
+                <div class="store-item">
+                    <span class="store-icon">📍</span>
+                    <div>
+                        <strong>Galería Damero</strong><br>
+                        <span>Tienda 105 - La Victoria, Lima</span>
+                    </div>
+                </div>
+                <div class="store-item">
+                    <span class="store-icon">📍</span>
+                    <div>
+                        <strong>Galería La Koketa</strong><br>
+                        <span>Tienda B 103 - La Victoria, Lima</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="footer-column">
-            <h4>Páginas de interés</h4>
-            <a href="https://www.instagram.com/samma.hub/" target="_blank">Instagram: samma.hub</a>
-            <a href="#terms">Términos y condiciones</a>
-            <a href="#policy">Políticas de cambios</a>
-            <a href="https://www.tiktok.com/@samma.hub" target="_blank">Síguenos en TikTok</a>
+            <div class="footer-column-header">
+                <span class="footer-icon">📋</span>
+                <h4>Páginas de interés</h4>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/samma.hub/" target="_blank">
+                    <span class="link-icon">📷</span>
+                    Instagram: samma.hub
+                </a>
+                <a href="#terms">
+                    <span class="link-icon">📄</span>
+                    Términos y condiciones
+                </a>
+                <a href="#policy">
+                    <span class="link-icon">🔄</span>
+                    Políticas de cambios
+                </a>
+                <a href="https://www.tiktok.com/@samma.hub" target="_blank">
+                    <span class="link-icon">🎵</span>
+                    Síguenos en TikTok
+                </a>
+            </div>
         </div>
 
-        <div class="footer-column">
-            <h4>Newsletter</h4>
+        <div class="footer-column newsletter-column">
+            <div class="footer-column-header">
+                <span class="footer-icon">💌</span>
+                <h4>Newsletter</h4>
+            </div>
             <p>Regístrate para enterarte de lanzamientos, descuentos y más. Be part of Samma.hub 💖</p>
-            <input type="email" placeholder="Tu correo electrónico">
-            <button>SUBSCRIBIRSE</button>
+            <div class="newsletter-form">
+                <div class="newsletter-input-group">
+                    <span class="input-icon">📧</span>
+                    <input type="email" placeholder="Tu correo electrónico" id="footerNewsletterEmail">
+                </div>
+                <button onclick="subscribeNewsletterFooter()" class="newsletter-btn">
+                    <span class="btn-icon">✨</span>
+                    SUBSCRIBIRSE
+                </button>
+            </div>
+            <div class="newsletter-features">
+                <div class="feature-item">
+                    <span class="feature-icon">🎁</span>
+                    <span>Descuentos exclusivos</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🔔</span>
+                    <span>Nuevos lanzamientos</span>
+                </div>
+            </div>
         </div>
-
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 Samma.hub | Moda Femenina</p>
-            <div class="socials">
-                <a href="https://www.instagram.com/samma.hub/" target="_blank"> Instagram </a>
-                <a href="https://www.tiktok.com/@samma.hub" target="_blank"> TikTok </a>
-                <a href="#"> Facebook </a>
+        <div class="footer-bottom-content">
+            <div class="copyright">
+                <span class="copyright-icon">©</span>
+                <span>2026 Samma.hub | Moda Femenina</span>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/samma.hub/" target="_blank" class="social-link instagram">
+                    <span class="social-icon">📷</span>
+                    <span class="social-text">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@samma.hub" target="_blank" class="social-link tiktok">
+                    <span class="social-icon">🎵</span>
+                    <span class="social-text">TikTok</span>
+                </a>
             </div>
         </div>
+    </div>
 </footer>
 
 
@@ -906,7 +1623,7 @@
                         <strong>Dirección</strong><br>
                         Damero - Tienda 105<br>
                         La Koketa - Tienda B 103<br>
-                        La Victoria, Lima
+                       Gamarra, La Victoria, Lima
                     </div>
                 </div>
                 <div class="info-item">
@@ -1297,6 +2014,139 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="terms-section">
+                    <div class="section-header">
+                        <div class="section-icon">🔒</div>
+                        <h3>Protección de Datos</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            En Samma.hub valoramos tu privacidad y protegemos tu información personal.
+                            Utilizamos tus datos únicamente para procesar pedidos y mejorar tu experiencia.
+                        </p>
+                        <ul>
+                            <li>Datos almacenados de forma segura y encriptada</li>
+                            <li>No compartimos información con terceros sin tu consentimiento</li>
+                            <li>Cumplimos con las leyes peruanas de protección de datos</li>
+                            <li>Puedes solicitar la eliminación de tus datos en cualquier momento</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <div class="section-header">
+                        <div class="section-icon">©️</div>
+                        <h3>Propiedad Intelectual</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Todos los diseños, imágenes y contenido de Samma.hub están protegidos por derechos de propiedad intelectual.
+                            No se permite la reproducción o uso comercial sin autorización expresa.
+                        </p>
+                        <ul>
+                            <li>Diseños exclusivos protegidos por copyright</li>
+                            <li>Imágenes y contenido propiedad de Samma.hub</li>
+                            <li>Uso personal permitido, comercial prohibido</li>
+                            <li>Violaciones pueden resultar en acciones legales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <div class="section-header">
+                        <div class="section-icon">⚖️</div>
+                        <h3>Responsabilidades</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Samma.hub se compromete a ofrecer productos de calidad y un servicio excepcional.
+                            Conoce nuestras responsabilidades y las tuyas como cliente.
+                        </p>
+                        <ul>
+                            <li>Garantizamos la calidad y autenticidad de nuestros productos</li>
+                            <li>Nos responsabilizamos por defectos de fabricación</li>
+                            <li>Clientes deben proporcionar información veraz al comprar</li>
+                            <li>Uso adecuado de las prendas según recomendaciones de cuidado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <div class="section-header">
+                        <div class="section-icon">⭐</div>
+                        <h3>Garantía de Calidad</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Nuestras prendas están fabricadas con materiales premium y procesos de calidad.
+                            Ofrecemos garantía contra defectos de fabricación.
+                        </p>
+                        <ul>
+                            <li>Garantía de 6 meses contra defectos de fabricación</li>
+                            <li>Materiales de alta calidad y durabilidad</li>
+                            <li>Atención prioritaria para reparaciones</li>
+                            <li>Compromiso con la satisfacción del cliente</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <div class="section-header">
+                        <div class="section-icon">📦</div>
+                        <h3>Procedimientos de Devolución</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Si no estás satisfecha con tu compra, puedes devolver el producto siguiendo estos pasos.
+                            Queremos que tengas la mejor experiencia posible.
+                        </p>
+                        <ul>
+                            <li>Devoluciones dentro de 7 días de recepción</li>
+                            <li>Producto en condiciones originales con etiquetas</li>
+                            <li>Contacta nuestro equipo para coordinar la devolución</li>
+                            <li>Reembolso procesado en 5-7 días hábiles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <div class="section-header">
+                        <div class="section-icon">🌐</div>
+                        <h3>Uso del Sitio Web</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            El uso de nuestro sitio web está destinado únicamente para compras personales.
+                            Nos reservamos el derecho de restringir el acceso a usuarios que violen estas condiciones.
+                        </p>
+                        <ul>
+                            <li>Uso personal y no comercial permitido</li>
+                            <li>No se permite el uso de bots o herramientas automatizadas</li>
+                            <li>Respeta los derechos de propiedad intelectual</li>
+                            <li>Mantén la confidencialidad de tu cuenta</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <div class="section-header">
+                        <div class="section-icon">📝</div>
+                        <h3>Modificaciones a los Términos</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento.
+                            Las modificaciones entrarán en vigor inmediatamente después de su publicación.
+                        </p>
+                        <ul>
+                            <li>Te notificaremos sobre cambios importantes</li>
+                            <li>El uso continuado del sitio implica aceptación de los nuevos términos</li>
+                            <li>Revisa periódicamente esta sección</li>
+                            <li>Los términos anteriores quedan sin efecto una vez publicados los nuevos</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="terms-footer">
@@ -1376,6 +2226,25 @@
 
                 <div class="policy-section">
                     <div class="section-header">
+                        <div class="section-icon">💰</div>
+                        <h3>Costos Asociados</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Los costos asociados a cambios y devoluciones varían según el método elegido.
+                            Queremos ser transparentes sobre los gastos que puedas tener.
+                        </p>
+                        <ul>
+                            <li>Cambios en tienda física: Sin costo adicional</li>
+                            <li>Envío de cambio a domicilio: Costo de envío según ubicación (S/15 - S/25)</li>
+                            <li>Devoluciones por defecto de fábrica: Sin costo para el cliente</li>
+                            <li>Reembolsos por cambio de opinión: Cliente asume costos de envío</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="policy-section">
+                    <div class="section-header">
                         <div class="section-icon">📋</div>
                         <h3>Proceso de Cambio</h3>
                     </div>
@@ -1416,6 +2285,95 @@
                                 <div class="option-icon">💰</div>
                                 <h4>Reembolso</h4>
                                 <p>Devolución del monto pagado a tu método original</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="policy-section">
+                    <div class="section-header">
+                        <div class="section-icon">⭐</div>
+                        <h3>Garantía de Calidad</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Nuestras prendas están fabricadas con materiales premium y procesos de calidad.
+                            Ofrecemos garantía contra defectos de fabricación.
+                        </p>
+                        <ul>
+                            <li>Garantía de 6 meses contra defectos de fabricación</li>
+                            <li>Materiales de alta calidad y durabilidad</li>
+                            <li>Atención prioritaria para reparaciones</li>
+                            <li>Compromiso con la satisfacción del cliente</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="policy-section">
+                    <div class="section-header">
+                        <div class="section-icon">📦</div>
+                        <h3>Procedimientos de Devolución Detallados</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Si no estás satisfecha con tu compra, puedes devolver el producto siguiendo estos pasos detallados.
+                            Queremos que tengas la mejor experiencia posible.
+                        </p>
+                        <ol>
+                            <li>Contacta a nuestro equipo por WhatsApp o Instagram dentro de 7 días</li>
+                            <li>Proporciona el número de pedido y motivo de la devolución</li>
+                            <li>Coordina el método de devolución (recogida o envío)</li>
+                            <li>Empaca el producto en su empaque original con etiquetas</li>
+                            <li>Recibe confirmación de recepción y procesamiento del reembolso</li>
+                            <li>Reembolso procesado en 5-7 días hábiles</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="policy-section">
+                    <div class="section-header">
+                        <div class="section-icon">👤</div>
+                        <h3>Responsabilidades del Cliente</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Como cliente de Samma.hub, tienes responsabilidades que nos ayudan a mantener un servicio de calidad.
+                            Conoce tus compromisos para una experiencia óptima.
+                        </p>
+                        <ul>
+                            <li>Proporcionar información veraz al realizar la compra</li>
+                            <li>Cuidar las prendas según las instrucciones de lavado</li>
+                            <li>Revisar el producto al recibirlo y reportar daños inmediatamente</li>
+                            <li>Contactar al equipo antes de realizar cualquier cambio o devolución</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="policy-section">
+                    <div class="section-header">
+                        <div class="section-icon">💰</div>
+                        <h3>Opciones de Reembolso</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            Ofrecemos diferentes métodos de reembolso según tu preferencia y método de pago original.
+                            El proceso es seguro y eficiente.
+                        </p>
+                        <div class="change-options">
+                            <div class="option-card">
+                                <div class="option-icon">💳</div>
+                                <h4>Reembolso a Tarjeta</h4>
+                                <p>Devolución directa a tu tarjeta de crédito o débito</p>
+                            </div>
+                            <div class="option-card">
+                                <div class="option-icon">🏦</div>
+                                <h4>Transferencia Bancaria</h4>
+                                <p>Depósito directo a tu cuenta bancaria</p>
+                            </div>
+                            <div class="option-card">
+                                <div class="option-icon">📱</div>
+                                <h4>Saldo en Tienda</h4>
+                                <p>Crédito para futuras compras en nuestras tiendas</p>
                             </div>
                         </div>
                     </div>
@@ -1466,6 +2424,15 @@
                 </div>
             </div>
 
+            <!-- DISCOUNT CODE -->
+            <div class="discount-section" id="discountSection" style="display: none;">
+                <div class="discount-input-group">
+                    <input type="text" id="discountCode" placeholder="Código de descuento" maxlength="20">
+                    <button onclick="applyDiscount()" class="btn-discount">Aplicar</button>
+                </div>
+                <div id="discountMessage" class="discount-message"></div>
+            </div>
+
             <!-- CART SUMMARY -->
             <div class="cart-summary-section" id="cartSummary" style="display: none;">
                 <div class="cart-summary-header">
@@ -1490,15 +2457,6 @@
                 <div class="free-shipping-notice" id="freeShippingNotice">
                     <span class="shipping-icon">🚚</span>
                     <span>¡Envío gratis por compras mayores a S/149!</span>
-                </div>
-
-                <!-- DISCOUNT CODE -->
-                <div class="discount-section">
-                    <div class="discount-input-group">
-                        <input type="text" id="discountCode" placeholder="Código de descuento" maxlength="20">
-                        <button onclick="applyDiscount()" class="btn-discount">Aplicar</button>
-                    </div>
-                    <div id="discountMessage" class="discount-message"></div>
                 </div>
             </div>
 
@@ -1560,11 +2518,18 @@
         <form id="loginForm" class="tab-content active">
             <div class="input-group">
                 <span class="input-icon">📧</span>
-                <input type="email" placeholder="Correo electrónico" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
             </div>
             <div class="input-group">
                 <span class="input-icon">🔒</span>
-                <input type="password" placeholder="Contraseña" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <div class="form-options">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="rememberMe">
+                    <span class="checkmark"></span>
+                    Recordarme
+                </label>
             </div>
             <a href="#" id="forgotPassword" class="forgot-link">¿Olvidaste tu contraseña?</a>
             <button type="submit" class="btn-primary">Entrar</button>
@@ -1574,15 +2539,30 @@
         <form id="registerForm" class="tab-content">
             <div class="input-group">
                 <span class="input-icon">👤</span>
-                <input type="text" placeholder="Nombre" required>
+                <input type="text" name="name" placeholder="Nombre completo" required>
             </div>
             <div class="input-group">
                 <span class="input-icon">📧</span>
-                <input type="email" placeholder="Correo electrónico" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
             </div>
             <div class="input-group">
                 <span class="input-icon">🔒</span>
-                <input type="password" placeholder="Contraseña" required>
+                <input type="password" id="registerPassword" name="password" placeholder="Contraseña" required>
+                <div class="password-strength">
+                    <div id="passwordStrength" class="strength-bar"></div>
+                    <span id="passwordStrengthText" class="strength-text">Muy débil</span>
+                </div>
+            </div>
+            <div class="input-group">
+                <span class="input-icon">🔒</span>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar contraseña" required>
+            </div>
+            <div class="form-options">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="acceptTerms" required>
+                    <span class="checkmark"></span>
+                    Acepto los <a href="#terms" onclick="document.getElementById('loginModal').classList.remove('show');">términos y condiciones</a>
+                </label>
             </div>
             <button type="submit" class="btn-primary">Crear cuenta</button>
         </form>
@@ -1677,6 +2657,169 @@
             Tu pedido será confirmado por WhatsApp 💬
         </p>
 
+    </div>
+</div>
+
+<!-- MODAL MIS PEDIDOS -->
+<div id="ordersModal" class="modal modal-large">
+    <div class="modal-box modal-wide orders-modal">
+        <span class="modal-close" id="closeOrders">&times;</span>
+
+        <div class="orders-header">
+            <h2>Mis Pedidos</h2>
+            <p>Historial de tus compras en Samma.hub 💖</p>
+        </div>
+
+        <div class="orders-content">
+            <div class="orders-empty">
+                <div class="empty-orders-icon">📦</div>
+                <h3>Aún no tienes pedidos</h3>
+                <p>¡Es hora de hacer tu primera compra!</p>
+                <button onclick="document.getElementById('ordersModal').classList.remove('show'); scrollToShop();" class="btn-primary">
+                    <span class="btn-icon">🛍️</span>
+                    Explorar productos
+                </button>
+            </div>
+
+            <!-- Ejemplo de pedido (comentado para mostrar estructura) -->
+            <!--
+            <div class="order-card">
+                <div class="order-header">
+                    <div class="order-info">
+                        <h4>Pedido #SAMMA-2024-001</h4>
+                        <span class="order-date">15 de enero, 2024</span>
+                    </div>
+                    <div class="order-status status-delivered">
+                        <span class="status-icon">✅</span>
+                        <span>Entregado</span>
+                    </div>
+                </div>
+                <div class="order-items">
+                    <div class="order-item">
+                        <img src="assets/products/Top Aliah.jpg" alt="Top Aliah">
+                        <div class="item-details">
+                            <h5>Top Aliah</h5>
+                            <p>Cantidad: 1 | S/ 149.90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-total">
+                    <span>Total: S/ 149.90</span>
+                </div>
+                <div class="order-actions">
+                    <button class="btn-outline small">Ver detalles</button>
+                    <button class="btn-primary small">Comprar de nuevo</button>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+</div>
+
+<!-- MODAL MIS FAVORITOS -->
+<div id="wishlistModal" class="modal modal-large">
+    <div class="modal-box modal-wide wishlist-modal">
+        <span class="modal-close" id="closeWishlist">&times;</span>
+
+        <div class="wishlist-header">
+            <h2>Mis Favoritos</h2>
+            <p>Productos que has guardado para después ❤️</p>
+        </div>
+
+        <div class="wishlist-content">
+            <div class="wishlist-empty">
+                <div class="empty-wishlist-icon">❤️</div>
+                <h3>Tu lista de favoritos está vacía</h3>
+                <p>Guarda productos que te gusten para encontrarlos fácilmente</p>
+                <button onclick="document.getElementById('wishlistModal').classList.remove('show'); scrollToShop();" class="btn-primary">
+                    <span class="btn-icon">🛍️</span>
+                    Explorar productos
+                </button>
+            </div>
+
+            <!-- Contenedor para productos favoritos (se llenará dinámicamente) -->
+            <div id="wishlistItems" class="wishlist-grid">
+                <!-- Los productos favoritos se agregarán aquí dinámicamente -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL CONFIGURACIÓN -->
+<div id="settingsModal" class="modal">
+    <div class="modal-box settings-modal">
+        <span class="modal-close" id="closeSettings">&times;</span>
+
+        <div class="settings-header">
+            <h2>Configuración de Cuenta</h2>
+            <p>Personaliza tu experiencia en Samma.hub ⚙️</p>
+        </div>
+
+        <div class="settings-content">
+            <div class="settings-section">
+                <h3>Información Personal</h3>
+                <div class="setting-item">
+                    <label for="userName">Nombre completo</label>
+                    <input type="text" id="userName" placeholder="Tu nombre completo">
+                </div>
+                <div class="setting-item">
+                    <label for="userEmail">Correo electrónico</label>
+                    <input type="email" id="userEmail" placeholder="tu@email.com" readonly>
+                    <small>El correo no se puede cambiar</small>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3>Preferencias</h3>
+                <div class="setting-item checkbox">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newsletterPref" checked>
+                        <span class="checkmark"></span>
+                        Recibir newsletter con ofertas
+                    </label>
+                </div>
+                <div class="setting-item checkbox">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="orderUpdates" checked>
+                        <span class="checkmark"></span>
+                        Notificaciones de pedidos
+                    </label>
+                </div>
+                <div class="setting-item checkbox">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newArrivals" checked>
+                        <span class="checkmark"></span>
+                        Alertas de nuevos productos
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3>Privacidad</h3>
+                <div class="setting-item">
+                    <button class="btn-outline" onclick="showNotification('Funcionalidad próximamente disponible', 'info')">
+                        <span class="btn-icon">🔒</span>
+                        Cambiar contraseña
+                    </button>
+                </div>
+                <div class="setting-item">
+                    <button class="btn-outline" onclick="showNotification('Funcionalidad próximamente disponible', 'info')">
+                        <span class="btn-icon">🗑️</span>
+                        Eliminar cuenta
+                    </button>
+                </div>
+            </div>
+
+            <div class="settings-actions">
+                <button class="btn-primary" onclick="saveSettings()">
+                    <span class="btn-icon">💾</span>
+                    Guardar cambios
+                </button>
+                <button class="btn-outline" onclick="document.getElementById('settingsModal').classList.remove('show')">
+                    Cancelar
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 
